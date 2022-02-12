@@ -1,0 +1,332 @@
+<html>
+	<head>
+		<!-- Meta Tags -->
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Assets : JS, CSS, Fonts -->
+
+		<!-- Google fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto:wght@400;500&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- Border.css -->
+		<link rel="stylesheet" href="src/css/border.css" />
+
+		<!-- Owl2 Carousel -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css"
+			integrity="sha256-UhQQ4fxEeABh4JrcmAJ1+16id/1dnlOEVCFOxDef9Lw="
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.theme.default.min.css"
+			integrity="sha256-kksNxjDRxd/5+jGurZUJd1sdR2v+ClrCl3svESBaJqw="
+			crossorigin="anonymous"
+		/>
+
+		<!-- Custom css -->
+		<link rel="stylesheet" href="src/css/style.css" />
+	</head>
+
+	<body>
+		<div class="page-wrapper">
+			<!-- Sidebar -->
+			<div class="sidebar">
+				<div class="mainNav top">
+					<ul class="mainNav_itemList">
+						<li class="mainNav_item">
+							<span>HOME</span>
+						</li>
+						<li class="mainNav_item">
+							<span>BROWSE</span>
+						</li>
+						<li class="mainNav_item">
+							<span>HEAR THIS</span>
+						</li>
+					</ul>
+				</div>
+				<div class="mainNav_separator"></div>
+				<div class="mainNav bottom">
+					<ul class="mainNav_itemList">
+						<li class="mainNav_item navTitle">My Music</li>
+						<li class="mainNav_item">
+							<img
+								class="mainNav_icon"
+								src="src/img/heart.svg"
+								alt="favourite-tracks-icon"
+							/>
+							<span>Favourite Tracks</span>
+						</li>
+						<li class="mainNav_item">
+							<img
+								class="mainNav_icon"
+								src="src/img/playlist.svg"
+								alt="favourite-tracks-icon"
+							/>
+							<span>Playlist</span>
+						</li>
+						<li class="mainNav_item">
+							<img
+								class="mainNav_icon"
+								src="src/img/albums.svg"
+								alt="favourite-tracks-icon"
+							/>
+							<span>Album</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- Main Content (Current playing, Browse, Editor Picks) -->
+			<div class="main-content">
+				<div class="main-content_player">
+					<div class="main-content_player-wrapper">
+						<div class="main-content_album">
+							<img
+								class="main-content_albumImg"
+								src="src/img/album-songs.jpg"
+								alt="album-songs"
+							/>
+							<div class="main-content_animatedEq_wrapper"></div>
+						</div>
+						<div class="main-content_description">
+							<p>All I Want</p>
+							<small>by Kodaline</small>
+							<br />
+							<div class="main-content_heartThis_wrapper"></div>
+							<div class="main-content_skipThis_wrapper"></div>
+						</div>
+					</div>
+				</div>
+				<div class="main-content_genre" style="max-width: 100vw">
+					<div class="heading">
+						<span>Browse</span>
+						<img src="src/img/icon-browse.png" alt="browse-icon" />
+						<br />
+						<small>Explore music, entertainment, and many more.</small>
+					</div>
+					<div class="genre_list owl-carousel owl-theme">
+						<div class="item">
+							<figure>
+								<img src="src/img/genre-1.jpg" alt="genre-images" />
+								<figcaption>Popular</figcaption>
+							</figure>
+						</div>
+						<div class="item">
+							<figure>
+								<img src="src/img/genre-2.jpg" alt="genre-images" />
+								<figcaption>Indie</figcaption>
+							</figure>
+						</div>
+						<div class="item">
+							<figure>
+								<img src="src/img/genre-3.jpg" alt="genre-images" />
+								<figcaption>Pop</figcaption>
+							</figure>
+						</div>
+						<div class="item">
+							<figure>
+								<img src="src/img/genre-4.jpg" alt="genre-images" />
+								<figcaption>Rock</figcaption>
+							</figure>
+						</div>
+						<div class="item">
+							<figure>
+								<img src="src/img/genre-5.jpg" alt="genre-images" />
+								<figcaption>Classic</figcaption>
+							</figure>
+						</div>
+						<div class="item">
+							<figure>
+								<img src="src/img/genre-6.jpg" alt="genre-images" />
+								<figcaption>Beatbox</figcaption>
+							</figure>
+						</div>
+						<div class="item">
+							<figure>
+								<img src="src/img/genre-7.jpg" alt="genre-images" />
+								<figcaption>Dance</figcaption>
+							</figure>
+						</div>
+						<div class="item">
+							<figure>
+								<img src="src/img/genre-8.jpg" alt="genre-images" />
+								<figcaption>EDM</figcaption>
+							</figure>
+						</div>
+					</div>
+				</div>
+				<div class="main-content_playlist" style="max-width: 100vw">
+					<div class="heading">
+						<span>Playlist picks</span>
+						<img src="src/img/icon-browse.png" alt="browse-icon" />
+						<br />
+						<small>Chosen for you by our Editors</small>
+					</div>
+					<div class="playlist_list owl-carousel owl-theme">
+						<div class="item">
+							<figure>
+								<img src="src/img/album-1.jpg" alt="playlist-images" />
+								<figcaption>
+									<div class="navigation">
+										<img src="src/img/action-play.png" alt="playlist-play" />
+										<img
+											src="src/img/action-favorite.png"
+											alt="playlist-favorite"
+										/>
+										<img src="src/img/action-more.png" alt="playlist-more" />
+									</div>
+									<span>Hits of the Moment</span>
+									<p>60 tracks - 725,066 fans</p>
+								</figcaption>
+							</figure>
+						</div>
+						<div class="item">
+							<figure>
+								<img src="src/img/album-2.jpg" alt="playlist-images" />
+								<figcaption>
+									<div class="navigation">
+										<img src="src/img/action-play.png" alt="playlist-play" />
+										<img
+											src="src/img/action-favorite.png"
+											alt="playlist-favorite"
+										/>
+										<img src="src/img/action-more.png" alt="playlist-more" />
+									</div>
+									<span>New Dance</span>
+									<p>50 tracks - 114,577 fans</p>
+								</figcaption>
+							</figure>
+						</div>
+						<div class="item">
+							<figure>
+								<img src="src/img/album-3.jpg" alt="playlist-images" />
+								<figcaption>
+									<div class="navigation">
+										<img src="src/img/action-play.png" alt="playlist-play" />
+										<img
+											src="src/img/action-favorite.png"
+											alt="playlist-favorite"
+										/>
+										<img src="src/img/action-more.png" alt="playlist-more" />
+									</div>
+									<span>Wake up Hits</span>
+									<p>87 tracks - 72,705 fans</p>
+								</figcaption>
+							</figure>
+						</div>
+						<div class="item">
+							<figure>
+								<img src="src/img/album-4.jpg" alt="playlist-images" />
+								<figcaption>
+									<div class="navigation">
+										<img src="src/img/action-play.png" alt="playlist-play" />
+										<img
+											src="src/img/action-favorite.png"
+											alt="playlist-favorite"
+										/>
+										<img src="src/img/action-more.png" alt="playlist-more" />
+									</div>
+									<span>Pop Punk Heroes</span>
+									<p>93 tracks - 35,619 fans</p>
+								</figcaption>
+							</figure>
+						</div>
+						<div class="item">
+							<figure>
+								<img src="src/img/album-5.jpg" alt="playlist-images" />
+								<figcaption>
+									<div class="navigation">
+										<img src="src/img/action-play.png" alt="playlist-play" />
+										<img
+											src="src/img/action-favorite.png"
+											alt="playlist-favorite"
+										/>
+										<img src="src/img/action-more.png" alt="playlist-more" />
+									</div>
+									<span>Thank God It's Friday</span>
+									<p>65 tracks - 15,775 fans</p>
+								</figcaption>
+							</figure>
+						</div>
+						<div class="item">
+							<figure>
+								<img src="src/img/album-6.jpg" alt="playlist-images" />
+								<figcaption>
+									<div class="navigation">
+										<img src="src/img/action-play.png" alt="playlist-play" />
+										<img
+											src="src/img/action-favorite.png"
+											alt="playlist-favorite"
+										/>
+										<img src="src/img/action-more.png" alt="playlist-more" />
+									</div>
+									<span>New School of Rap</span>
+									<p>23 tracks - 997,541 fans</p>
+								</figcaption>
+							</figure>
+						</div>
+						<div class="item">
+							<figure>
+								<img src="src/img/album-7.jpg" alt="playlist-images" />
+								<figcaption>
+									<div class="navigation">
+										<img src="src/img/action-play.png" alt="playlist-play" />
+										<img
+											src="src/img/action-favorite.png"
+											alt="playlist-favorite"
+										/>
+										<img src="src/img/action-more.png" alt="playlist-more" />
+									</div>
+									<span>Sunday Morning</span>
+									<p>46 tracks - 25,066 fans</p>
+								</figcaption>
+							</figure>
+						</div>
+						<div class="item">
+							<figure>
+								<img src="src/img/album-8.jpg" alt="playlist-images" />
+								<figcaption>
+									<div class="navigation">
+										<img src="src/img/action-play.png" alt="playlist-play" />
+										<img
+											src="src/img/action-favorite.png"
+											alt="playlist-favorite"
+										/>
+										<img src="src/img/action-more.png" alt="playlist-more" />
+									</div>
+									<span>Motivation Hits</span>
+									<p>53 tracks - 45,066 fans</p>
+								</figcaption>
+							</figure>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+	<!-- jQuery -->
+	<script
+		src="https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js"
+		integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+		crossorigin="anonymous"
+	></script>
+
+	<!-- Owl2 Carousel -->
+	<script
+		src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"
+		integrity="sha256-pTxD+DSzIwmwhOqTFN+DB+nHjO4iAsbgfyFq5K5bcE0="
+		crossorigin="anonymous"
+	></script>
+
+	<!-- Custom JS -->
+	<script src="src/js/script.js"></script>
+</html>
